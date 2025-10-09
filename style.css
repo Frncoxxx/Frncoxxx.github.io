@@ -1,0 +1,104 @@
+body {
+    background: white;
+}
+
+main {
+    background-color: #CBDCEB;
+}
+
+#jean {
+    font-size: 30px;
+}
+
+#nav {
+    color: black;
+}
+
+.text-teal {
+    color: #0ea5a5;
+}
+
+.photo-wrapper {
+    width: clamp(180px, 32vw, 220px);
+    aspect-ratio: 1 / 1;
+}
+
+.object-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Botones de redes redondos */
+
+#yosoy {
+    font-size: 15px
+}
+
+.icon-btn {
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #fff;
+    color: #111;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, .06);
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.icon-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .10);
+}
+
+/* Ajustes de tipografía en pantallas pequeñas */
+@media (max-width: 576px) {
+    h1.display-5 {
+        font-size: 2rem
+    }
+
+    h2 {
+        font-size: 1.5rem
+    }
+}
+
+small.text-secondary {
+    display: block;
+    text-align: right;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+}
+
+#cb1 {
+    background-image: url(img/img01sem01.jpg);
+}
+
+#cb2 {
+    background-image: url(img/img01sem01.jpg);
+}
+
+#cb3 {
+    background-image: url(img/img01sem01.jpg);
+}
+
+#cb4 {
+    background-image: url(img/img01sem01.jpg);
+}
+
+#cb5 {
+    background-image: url(img/img01sem01.jpg);
+}
+
+#cb6 {
+    background-image: url(img/img01sem01.jpg);
+}
+
+#cb7 {
+    background-image: url(img/img01sem01.jpg);
+}
+
+#cbt {
+    color: white;
+}
