@@ -38,6 +38,82 @@
         </header>
     </div>
 
+        <div class="container">
+        <div class="cuerpo px-5">
+            <h2 class="titulo text-center my-4 text-success">SEMANA 7: Hooks</h2>
+            <div class=" d-flex justify-content-center my-4">
+                <img src="../img/img01sem07.png" alt="" width="50%">
+            </div>
+
+            <h5 class="texto px-5">1. Introducción a Hooks:</h5>
+            <p class="texto px-5">
+                Los Hooks fueron introducidos en React 16.8 y permiten que los componentes de tipo función gestionen el
+                estado y otras características sin necesidad de convertirlos en componentes de clase.
+            </p>
+
+            <div class=" d-flex justify-content-center my-4">
+                <img src="../img/img02sem07.png" alt="" width="50%">
+            </div>
+
+            <h5 class="texto px-5">2. Tipos de Hooks:</h5>
+            <p class="texto px-5">
+                - useState: Permite crear y actualizar el estado en un componente funcional. <br>
+                - useEffect: Ejecuta efectos secundarios en componentes, como la obtención de datos o la manipulación
+                del
+                DOM. <br>
+                - useContext: Permite compartir datos entre componentes sin necesidad de pasar props de un componente a
+                otro. <br>
+                - useReducer: Una alternativa más robusta a useState para manejar estados complejos. <br>
+                - useRef, useNavigate, useParams: Otros hooks útiles para gestionar referencias, navegación y parámetros
+                de URL.
+            </p>
+
+            <h5 class="texto px-5">Ejemplo: useState</h5>
+            <div class="container-fluid my-4">
+                <div class="bg-dark text-warning p-3 rounded">
+                    <small class="text-secondary">Código</small>
+                    <xmp>
+                        import React, { useState } from 'react';
+
+                        function Counter() {
+                        const [count, setCount] = useState(0);
+
+                        return (
+                        <div>
+                            <p>Contador: {count}</p>
+                            <button onClick={()=> setCount(count + 1)}>Incrementar</button>
+                        </div>
+                        );
+                        }
+                    </xmp>
+                </div>
+            </div>
+
+            <h5 class="texto px-5">3. Gestión de Estado:</h5>
+            <p class="texto px-5">
+                - useState y useReducer se utilizan para gestionar el estado local y complejo de una aplicación. <br>
+                - useEffect maneja efectos secundarios como el manejo de APIs o temporizadores, y se ejecuta en
+                diferentes
+                fases del ciclo de vida de un componente (montaje, actualización).
+            </p>
+
+            <h5 class="texto px-5">4. Custom Hooks:</h5>
+            <p class="texto px-5">
+                Se recomienda usar hooks personalizados para encapsular lógica reutilizable y mejorar la
+                organización
+                del código. <br>
+                Los hooks personalizados deben seguir buenas prácticas como mantener el estado mínimo necesario y
+                asegurar que las dependencias se gestionen correctamente en useEffect.
+            </p>
+
+            <h4 class="texto px-5 text-danger">Referencias:</h4>
+            <p class="texto px-5">
+                • Guía entregada por el docente <br>
+                • MDN Web Docs. Introducción a JSX. https://developer.mozilla.org/es/docs/Web/JavaScript/JSX
+            </p>
+        </div>
+    </div>
+
 
 
 
@@ -47,5 +123,6 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 </body>
+
 
 </html>
