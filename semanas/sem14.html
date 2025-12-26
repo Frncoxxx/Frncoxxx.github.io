@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semana 14 - Backend con Python (Flask)</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3"
+      >
+        <div class="col-md-3 mb-2 mb-md-0">
+          <a
+            href="../index.html"
+            class="text-decoration-none text-teal fw-bold"
+            id="jean"
+          >
+            Jean Franco
+          </a>
+        </div>
+
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+          >
+            Semanas
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
+            <li><a class="dropdown-item" href="sem01.html">Semana 1</a></li>
+            <li><a class="dropdown-item" href="sem02.html">Semana 2</a></li>
+            <li><a class="dropdown-item" href="sem03.html">Semana 3</a></li>
+            <li><a class="dropdown-item" href="sem04.html">Semana 4</a></li>
+            <li><a class="dropdown-item" href="sem05.html">Semana 5</a></li>
+            <li><a class="dropdown-item" href="sem06.html">Semana 6</a></li>
+            <li><a class="dropdown-item" href="sem07.html">Semana 7</a></li>
+            <li><a class="dropdown-item" href="sem09.html">Semana 9</a></li>
+            <li><a class="dropdown-item" href="sem10.html">Semana 10</a></li>
+            <li><a class="dropdown-item" href="sem11.html">Semana 11</a></li>
+            <li><a class="dropdown-item" href="sem12.html">Semana 12</a></li>
+            <li><a class="dropdown-item" href="sem13.html">Semana 13</a></li>
+            <li><a class="dropdown-item" href="sem14.html">Semana 14</a></li>
+          </ul>
+        </div>
+      </header>
+    </div>
+
+    <div class="container">
+      <div class="cuerpo px-5">
+        <h2 class="titulo text-center my-4 text-warning">
+          SEMANA 14: Desarrollo Backend con Python (Flask + MySQL + Plantillas)
+        </h2>
+
+        <div class="d-flex justify-content-center my-4">
+          <img
+            src="../img/img01sem14.png"
+            alt="Apache + mod_wsgi"
+            width="55%"
+          />
+        </div>
+
+        <p class="texto px-5">
+          En esta semana se trabajó el desarrollo backend con <b>Python</b>,
+          revisando cómo un servidor como <b>Apache</b> puede ejecutar
+          aplicaciones Python mediante <b>mod_wsgi</b>, y reforzando fundamentos
+          del lenguaje: instalación, ejecución, sintaxis y buenas prácticas
+          <b>PEP-8</b>. Luego se introdujo el framework <b>Flask</b> para
+          construir aplicaciones web ligeras con rutas, plantillas y conexión a
+          base de datos. También se explicó el motor de plantillas
+          <b>Jinja2</b> para generar HTML dinámico y separar lógica (backend) de
+          presentación (frontend).
+        </p>
+
+        <h5 class="texto px-5 mt-4">Lo que vimos en clase</h5>
+        <p class="texto px-5">
+          • Apache HTTP Server: request/response y entrega de contenido web.<br />
+          • Instalación portable de Apache (Apache Lounge) y configuración
+          básica en <b>httpd.conf</b>.<br />
+          • ¿Qué es <b>mod_wsgi</b> y para qué sirve: integrar Python
+          (Flask/Django) dentro de Apache.<br />
+          • Instalación de Python y verificación de versión (python
+          --version).<br />
+          • Gestión de paquetes con <b>PIP</b> (pip install, pip list,
+          requirements.txt).<br />
+          • Estándares de estilo con <b>PEP-8</b> (indentación, nombres y
+          organización de imports).<br />
+          • Fundamentos de sintaxis Python: variables, condicionales, bucles,
+          funciones y POO.<br />
+          • Flask: rutas con <code>@app.route</code>, request/response y
+          render_template.<br />
+          • Jinja2: variables, condicionales, bucles, herencia de plantillas y
+          filtros.
+        </p>
+
+        <div class="d-flex justify-content-center my-4">
+          <img
+            src="../img/img02sem14.png"
+            alt="Definición mod_wsgi y configuración"
+            width="55%"
+          />
+        </div>
+
+        <div class="d-flex justify-content-center my-4">
+          <img
+            src="../img/img03sem14.png"
+            alt="Definición mod_wsgi y configuración"
+            width="55%"
+          />
+        </div>
+
+        <h5 class="texto px-5 mt-4">Conceptos clave (Python + PIP + PEP-8)</h5>
+
+        <div class="table-responsive px-5">
+          <table class="table table-bordered table-striped align-middle">
+            <thead class="table-dark">
+              <tr>
+                <th>Tema</th>
+                <th>¿Qué es?</th>
+                <th>Ejemplo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>PIP</td>
+                <td>
+                  Gestor de paquetes de Python para instalar librerías desde
+                  PyPI
+                </td>
+                <td><code>pip install flask</code></td>
+              </tr>
+              <tr>
+                <td>PEP-8</td>
+                <td>Guía de estilo de Python para código limpio y legible</td>
+                <td>Indentación con 4 espacios</td>
+              </tr>
+              <tr>
+                <td>POO</td>
+                <td>Programación orientada a objetos (clases, herencia)</td>
+                <td><code>class Persona:</code></td>
+              </tr>
+              <tr>
+                <td>mod_wsgi</td>
+                <td>
+                  Módulo para ejecutar apps Python dentro de Apache (WSGI)
+                </td>
+                <td><code>WSGIScriptAlias / app.wsgi</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="d-flex justify-content-center my-4">
+          <img src="../img/img04sem14.jpg" alt="Sintaxis Python" width="55%" />
+        </div>
+
+        <h5 class="texto px-5 mt-4">Flask y Jinja2</h5>
+        <p class="texto px-5">
+          Flask es un <b>microframework</b> en Python para construir
+          aplicaciones web de forma rápida y flexible. Permite definir rutas con
+          <code>@app.route</code>, manejar formularios con <b>request</b> y
+          devolver respuestas. Para la interfaz, Flask utiliza plantillas con
+          <b>Jinja2</b>, que permite incrustar variables (<code>{{ ... }}</code
+          >), condicionales y bucles en HTML, además de herencia de plantillas
+          para reutilizar estructuras comunes.
+        </p>
+
+        <div class="d-flex justify-content-center my-4">
+          <img
+            src="../img/img05sem14.png"
+            alt="Jinja2: herencia y filtros"
+            width="55%"
+          />
+        </div>
+
+        <h5 class="texto px-5 mt-4">Ejercicios de Laboratorio</h5>
+        <p class="texto px-5">
+          <b>Ejercicio 01 (Python - POO):</b> Se implementó una aplicación
+          orientada a objetos con una clase base <b>Persona</b> y una clase
+          derivada <b>Estudiante</b>, aplicando herencia, uso de
+          <code>super()</code> y sobrescritura de métodos (polimorfismo).<br /><br />
+
+            <div class="d-flex justify-content-center my-4">
+              <img
+                src="../img/img06sem14.png"
+                alt="Flask + MySQL + formulario"
+                width="55%"
+              />
+            </div>
+
+            </p>
+
+          <p class="texto px-5">
+          <b>Ejercicio 02 (Flask + MySQL):</b> Se creó una aplicación web en
+          Flask que muestra un formulario HTML para registrar estudiantes y
+          guarda los datos en una base de datos MySQL mediante la librería
+          <b>pymysql</b>. Se definieron rutas: una para mostrar el formulario y
+          otra para recibir el POST y ejecutar el INSERT en la tabla.
+
+        <div class="d-flex justify-content-center my-4">
+          <img
+            src="../img/img07sem14.png"
+            alt="Flask + MySQL + formulario"
+            width="55%"
+          />
+        </div>
+
+        <div class="d-flex justify-content-center my-4">
+          <img
+            src="../img/img08sem14.png"
+            alt="Flask + MySQL + formulario"
+            width="55%"
+          />
+        </div>
+        </p>
+
+
+        <h4 class="texto px-5 text-primary-emphasis">Reflexión</h4>
+        <p class="texto px-5">
+          Esta semana entendí cómo Python puede usarse como backend real en
+          aplicaciones web. Me quedó claro que <b>Flask</b> es ideal para
+          proyectos ligeros porque permite definir rutas y conectar con bases de
+          datos de forma sencilla. Además, el uso de <b>Jinja2</b> ayuda a
+          separar la lógica del servidor de la parte visual, haciendo el código
+          más ordenado. Finalmente, con <b>mod_wsgi</b> aprendí que también se
+          pueden desplegar aplicaciones Python dentro de Apache, integrándose
+          con un entorno de servidor web tradicional.
+        </p>
+
+        <h4 class="texto px-5 text-danger">Referencias</h4>
+        <p class="texto px-5">
+          • Guía del docente: DesarrolloBackendconPython.pdf.<br />
+          • Python: https://www.python.org/<br />
+          • Flask: https://flask.palletsprojects.com/<br />
+          • Jinja2: https://jinja.palletsprojects.com/<br />
+          • mod_wsgi: https://modwsgi.readthedocs.io/
+        </p>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

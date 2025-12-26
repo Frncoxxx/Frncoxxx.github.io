@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semana 11</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3"
+      >
+        <div class="col-md-3 mb-2 mb-md-0">
+          <a
+            href="../index.html"
+            class="text-decoration-none text-teal fw-bold"
+            id="jean"
+          >
+            Jean Franco</a
+          >
+        </div>
+        <ul
+          class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0"
+        ></ul>
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Semanas
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
+            <li><a class="dropdown-item" href="sem01.html">Semana 1</a></li>
+            <li><a class="dropdown-item" href="sem02.html">Semana 2</a></li>
+            <li><a class="dropdown-item" href="sem03.html">Semana 3</a></li>
+            <li><a class="dropdown-item" href="sem04.html">Semana 4</a></li>
+            <li><a class="dropdown-item" href="sem05.html">Semana 5</a></li>
+            <li><a class="dropdown-item" href="sem06.html">Semana 6</a></li>
+            <li><a class="dropdown-item" href="sem07.html">Semana 7</a></li>
+            <li><a class="dropdown-item" href="sem09.html">Semana 9</a></li>
+            <li><a class="dropdown-item" href="sem10.html">Semana 10</a></li>
+            <li><a class="dropdown-item" href="sem11.html">Semana 11</a></li>
+            <li><a class="dropdown-item" href="sem12.html">Semana 12</a></li>
+            <li><a class="dropdown-item" href="sem13.html">Semana 13</a></li>
+            <li><a class="dropdown-item" href="sem14.html">Semana 14</a></li>
+          </ul>
+        </div>
+      </header>
+    </div>
+
+    <div class="container">
+      <div class="cuerpo px-5">
+        <h2 class="titulo text-center my-4 text-success">
+          SEMANA 12: Revisión de Laboratorio (Java + Spring Boot)
+        </h2>
+
+        <h5 class="texto px-5">1. ¿Qué revisamos esta semana?</h5>
+        <p class="texto px-5">
+          En esta semana se realizó la <b>revisión y análisis</b> de un
+          laboratorio basado en <b>Java + Spring Boot</b>. El objetivo fue
+          entender la estructura del proyecto, identificar cómo se organizan las
+          capas (controlador, servicio, repositorio) y comprobar el
+          funcionamiento de los endpoints (rutas) de la API.
+        </p>
+
+        <div class="d-flex justify-content-center my-4">
+          <img
+            src="../img/img01sem11.png"
+            alt="Estructura del proyecto"
+            width="20%"
+          />
+        </div>
+
+        <h5 class="texto px-5">
+          2. Estructura típica del proyecto Spring Boot
+        </h5>
+        <p class="texto px-5">
+          En el laboratorio se revisó cómo se organiza un backend profesional en
+          Spring Boot, donde cada paquete cumple una función específica. Esto
+          ayuda a mantener el código ordenado, escalable y fácil de mantener.
+        </p>
+
+        <div class="table-responsive px-5 my-3">
+          <table class="table table-bordered table-striped align-middle">
+            <thead class="table-dark">
+              <tr>
+                <th>Capa / Paquete</th>
+                <th>Rol principal</th>
+                <th>Ejemplo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Controller</b></td>
+                <td>
+                  Recibe solicitudes HTTP (GET/POST/PUT/DELETE) y devuelve
+                  respuesta (JSON).
+                </td>
+                <td>
+                  <code>@RestController</code>, <code>@RequestMapping</code>
+                </td>
+              </tr>
+              <tr>
+                <td><b>Service</b></td>
+                <td>
+                  Contiene la lógica de negocio (validaciones, reglas,
+                  procesos).
+                </td>
+                <td><code>@Service</code></td>
+              </tr>
+              <tr>
+                <td><b>Repository</b></td>
+                <td>
+                  Acceso a datos (consultas, persistencia). Normalmente con JPA.
+                </td>
+                <td><code>@Repository</code>, <code>JpaRepository</code></td>
+              </tr>
+              <tr>
+                <td><b>Model / Entity</b></td>
+                <td>
+                  Representa la información del sistema (tablas / objetos de
+                  dominio).
+                </td>
+                <td><code>@Entity</code>, <code>@Table</code></td>
+              </tr>
+              <tr>
+                <td><b>Config</b></td>
+                <td>
+                  Configuraciones del sistema (CORS, seguridad, beans, etc.).
+                </td>
+                <td><code>@Configuration</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h5 class="texto px-5">3. Anotaciones clave que se identificaron</h5>
+        <p class="texto px-5">
+          Durante la revisión se reforzó el uso de anotaciones para definir el
+          comportamiento del framework, especialmente en controladores REST y en
+          el manejo de dependencias.
+        </p>
+
+        <div class="table-responsive px-5 my-3">
+          <table class="table table-bordered align-middle">
+            <thead class="table-secondary">
+              <tr>
+                <th>Anotación</th>
+                <th>¿Para qué sirve?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>@SpringBootApplication</code></td>
+                <td>Clase principal que inicia el proyecto Spring Boot.</td>
+              </tr>
+              <tr>
+                <td><code>@RestController</code></td>
+                <td>
+                  Declara una clase como controlador REST (respuestas tipo
+                  JSON).
+                </td>
+              </tr>
+              <tr>
+                <td><code>@GetMapping</code>, <code>@PostMapping</code></td>
+                <td>Define rutas HTTP por método (GET, POST, etc.).</td>
+              </tr>
+              <tr>
+                <td><code>@Autowired</code></td>
+                <td>
+                  Inyección de dependencias (conecta Controller → Service →
+                  Repository).
+                </td>
+              </tr>
+              <tr>
+                <td><code>@Entity</code></td>
+                <td>Marca una clase como entidad de base de datos (ORM).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="d-flex justify-content-center my-4">
+          <img
+            src="../img/img02sem11.png"
+            alt="Endpoints en Postman"
+            width="50%"
+          />
+        </div>
+
+        <h5 class="texto px-5">
+          4. Flujo de una petición en la API (lo más importante)
+        </h5>
+        <p class="texto px-5">
+          Se revisó el recorrido completo que sigue una solicitud desde que sale
+          del cliente (Postman / navegador) hasta que llega a la base de datos y
+          regresa como respuesta:
+        </p>
+
+        <p class="texto px-5">
+          • Cliente envía una solicitud HTTP a un endpoint.<br />
+          • El <b>Controller</b> recibe la ruta y valida parámetros.<br />
+          • El <b>Service</b> procesa reglas del negocio.<br />
+          • El <b>Repository</b> consulta o guarda datos.<br />
+          • Spring devuelve la respuesta en formato <b>JSON</b>.
+        </p>
+
+        <h5 class="texto px-5">Ejemplo: Endpoint REST (estructura)</h5>
+        <div class="container-fluid my-4">
+          <div class="bg-dark text-warning p-3 rounded">
+            <small class="text-secondary">Código (referencial)</small>
+            <pre class="mb-0 mt-2 text-warning">
+@RestController
+@RequestMapping("/api")
+public class DocenteController {
+
+  @GetMapping("/docentes")
+  public List&lt;Docente&gt; listar() {
+    return servicio.listar();
+  }
+}
+            </pre>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center my-4">
+          <img
+            src="../img/img04sem11.png"
+            alt="application.properties y configuración"
+            width="50%"
+          />
+        </div>
+
+        <h5 class="texto px-5">5. Checklist de revisión (qué se validó)</h5>
+        <p class="texto px-5">
+          Para confirmar que el laboratorio estaba correcto, se verificó:
+        </p>
+        <p class="texto px-5">
+          • El proyecto compila sin errores en el IDE.<br />
+          • La aplicación levanta en un puerto (por ejemplo 8080).<br />
+          • Los endpoints responden con datos (GET) y registran información
+          (POST).<br />
+          • La estructura por capas está ordenada (MVC / capas).<br />
+          • Se revisó el archivo de configuración (<code
+            >application.properties</code
+          >
+          o <code>application.yml</code>).<br />
+        </p>
+
+        <div class="d-flex justify-content-center my-4">
+          <img
+            src="../img/img03sem11.png"
+            alt="application.properties y configuración"
+            width="50%"
+          />
+        </div>
+
+        <div class="d-flex justify-content-center my-4">
+          <img
+            src="../img/img05sem11.png"
+            alt="application.properties y configuración"
+            width="50%"
+          />
+        </div>
+
+        <h4 class="texto px-5 text-primary-emphasis">Reflexión:</h4>
+        <p class="texto px-5">
+          Esta semana entendí mejor cómo se estructura un backend real con
+          Spring Boot. Revisar un laboratorio ya funcional ayudó a identificar
+          el rol de cada capa (Controller, Service, Repository) y cómo se
+          procesa una petición desde el cliente hasta la respuesta en JSON. Esto
+          refuerza buenas prácticas para desarrollar proyectos más ordenados,
+          escalables y fáciles de mantener.
+        </p>
+
+        <h4 class="texto px-5 text-danger">Referencias:</h4>
+        <p class="texto px-5">
+          • Guía / laboratorio entregado por el docente <br />
+          • Spring Boot Documentation: https://spring.io/projects/spring-boot
+          <br />
+          • Java Documentation: https://docs.oracle.com/en/java/
+        </p>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
